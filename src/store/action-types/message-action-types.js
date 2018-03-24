@@ -1,0 +1,7 @@
+const FETCH_MESSAGES = 'FETCH_MESSAGES';
+const ADD_MESSAGE = 'ADD_MESSAGE';
+
+export {
+    FETCH_MESSAGES,
+    ADD_MESSAGE
+}
