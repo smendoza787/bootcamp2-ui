@@ -1,0 +1,1 @@
+export const characterSelector = state => state.swapi.fetchedCharacters;
