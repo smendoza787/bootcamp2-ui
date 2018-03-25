@@ -17,8 +17,8 @@ class SwapiContainer extends Component {
     }
 
     renderSwapiCharacters() {
-        if (this.props.characters.results) {
-            return this.props.characters.results.map((character, i) => <SwapiCharacter character={character} key={i} />)
+        if (this.props.characters) {
+            return this.props.characters.map((character, i) => <SwapiCharacter character={character} key={i} />)
         }
     }
     

@@ -9,9 +9,8 @@ import { swapiActionCreators } from '../action-creators';
 function* fetchCharacters() {
   try {
     const response = yield call(fetch, 'https://swapi.co/api/people/');
-    const data = yield response.json();
-    const thing = yield swapiActionCreators.receiveSwapiCharacters(data);
-    yield put(thing)
+    const swapiResponse = yield response.json();
+    yield put(swapiActionCreators.receiveSwapiCharacters(swapiResponse.results))
   } catch (e) {
     console.log(e);
   }
